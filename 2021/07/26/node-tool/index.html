@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   
   <title>
-    归档: 2021/5 | 求索
+    node-tool（window） | 求索
   </title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta name="theme-color" content="#4184f3">
@@ -135,38 +135,137 @@
 				<div class="container content">
 					<div class="scene_element scene_element--fadein">
 						<div class="row">
-    <div class="main">
-   
-        <article class="title-list">
-            
-            
-            <section>
-                <time class="post-date" datetime="2021-05-21T06:24:47.000Z">
-                    2021-05-21
-                </time>
-                <a href="/2021/05/21/CubeJs/">
-                    CubeJs
-                </a>
-                
-            </section>
-            
-            <section>
-                <time class="post-date" datetime="2021-05-21T01:12:17.000Z">
-                    2021-05-21
-                </time>
-                <a href="/2021/05/21/GraphQL/">
-                    GraphQL 入门
-                </a>
-                
-            </section>
-            
-        </article>
+  <div class="main main-article">
+    <article>
+
+      
+        <header class="post-header no-cover">
+      
+        </header>
+
+      <!-- 标题 -->
+      <h1 class="post-title">
+        node-tool（window）
+      </h1>
+
+      <section class="post-info post-info-bottom">
+
+        <!-- 发布时间 -->
+        <span class="post-date">
+          <span class="post-date-text">
+            发布于: 2021-07-26
+          </span>
+        </span>
         
-  
-    </div>
+        <!-- 分类 -->
+        
+          <span class="post-category">分类:
+            <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+          </span>
+        
+
+        <!-- 标签 -->
+        
+          <span class="post-tags">
+            <ul class="post-tag-list" itemprop="keywords"><li class="post-tag-list-item"><a class="post-tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li></ul>
+          </span>
+        
+
+        <!-- 阅读量统计 -->
+        
+
+      </section>
+
+      <!-- 正文 -->
+      <section class="post-content">
+        <p>目录</p>
+<ul>
+<li>nvm node版本管理</li>
+<li>nrm node镜像源管理</li>
+</ul>
+<h2 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h2><p>node版本管理 开始前需卸载node</p>
+<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>  <a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases">nvm最新下载地址</a><br>  选择 nvm-setup.zip 下载<br>  <img src="https://img.redocn.com/shejigao/20121017/20121015_89c77712c62c15e2812eIEbBHsiMc1Mu.jpg.285.jpg" alt="1"><br>  下载成功后双击安装，自主选择选择nvm安装路径、node安装路径，开始安装。<br>  打开CMD，输入命令 nvm ，安装成功则如下显示。可以看到里面列出了各种命令<br>  <img src="https://img.redocn.com/shejigao/20121017/20121015_89c77712c62c15e2812eIEbBHsiMc1Mu.jpg.285.jpg" alt="1"></p>
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><p>   1、查看本地安装的所有版本；有可选参数available，显示所有可下载的版本。<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm list [available]</span><br></pre></td></tr></table></figure><br>  2、安装，命令中的版本号可自定义，具体参考命令1查询出来的列表<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install 11.13.0</span><br></pre></td></tr></table></figure><br>   3、使用特定版本<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm use 11.13.0</span><br></pre></td></tr></table></figure><br>    4、卸载<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm uninstall 11.13.0</span><br></pre></td></tr></table></figure></p>
+<h2 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h2><p>  nrm(npm registry manager ) node镜像源管理工具</p>
+<h3 id="下载-1"><a href="#下载-1" class="headerlink" title="下载"></a>下载</h3><p>  全局安装 nrm<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -g i nrm</span><br></pre></td></tr></table></figure></p>
+<h3 id="命令-1"><a href="#命令-1" class="headerlink" title="命令"></a>命令</h3><p>  1.查看可选源<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm ls</span><br></pre></td></tr></table></figure><br>  2.切换源<br>  切换到taobao源<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm use tabao</span><br></pre></td></tr></table></figure><br>  3.增加源<br>  你可以增加定制的源，特别适用于添加企业内部的私有源，执行命令 nrm add <registry> <url>，其中reigstry为源名，url为源的路径。<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm add registry http:&#x2F;&#x2F;registry.npm.frp.trmap.cn&#x2F;</span><br></pre></td></tr></table></figure><br>  4.删除源<br>  执行命令nrm del <registry>删除对应的源<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm del registry http:&#x2F;&#x2F;registry.npm.frp.trmap.cn&#x2F;</span><br></pre></td></tr></table></figure><br>  4.测试速度<br>  通过 nrm test 测试相应源的响应时间<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm test npm</span><br></pre></td></tr></table></figure></p>
+
+      </section>
+
+    </article>
     
-    <aside>
-        <div class="aside-wrap">
+    
+
+
+    <!-- 版权声明 -->
+    <div class="post-copyright">
+	<div>
+		<strong>本文作者：</strong>
+		<span>
+			萧
+		</span>
+	</div>
+	<div>
+		<strong>本文链接：</strong>
+		<a href="https://smartxj.github.io/2021/07/26/node-tool/">
+			https://smartxj.github.io/2021/07/26/node-tool/
+		</a>
+	</div>
+	<div>
+		<span>欢迎任何形式的转载，但请务必注明出处。</span>
+	</div>
+	<div>
+		<span>由于笔者水平有限，如果文章或代码有表述不当之处，还请不吝赐教。</span>
+	</div>
+</div>
+
+
+<style>
+	.post-copyright {
+		background-color: #fff;
+		/* box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05); */
+		box-shadow: 0 6px 30px -10px rgba(0, 0, 0, 0.1);
+		display: block;
+		margin: 20px auto;
+		margin-bottom: 15px;
+		padding: 10px;
+		font-size: 15px;
+		color: #2e2d2d;
+		word-break: break-all;
+		line-height: 1.8;
+	}
+
+
+	.post-copyright a {
+		color: #2e2d2d;
+		border-bottom: 1px solid #999;
+	}
+
+	.post-copyright a:hover {
+		color: #2e2d2d;
+		border-bottom: 1px solid #000;
+	}
+</style>
+
+    <!-- comments -->
+    <div class="comments">
+    <h3 id="commenttitle" style="margin-top: 20px;margin-left: 10px;">评论区</h3>
+    <div id="tcomment"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.0.0/dist/twikoo.all.min.js"></script>
+<script>twikoo.init({ envId: 'hello-cloudbase-6gk3602ma2286948', el: '#tcomment' })</script>
+
+    <div class="right-icon">
+      <div id="to-valine" class="right-icon-item">
+        <a href="#commenttitle">评论</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <aside>
+    <div class="aside-wrap">
     
         <section class="widget-wrap">
     <h3 class="widget-title">简介</h3>
@@ -355,9 +454,24 @@
     
 </div>
 
-    </aside>
-   
+    <!-- 目录 -->
     
+      <div id="toc">目录</div>
+      <script>
+        $(function () {
+          var elm = $('#toc');
+          var startPos = $(elm).offset().top;
+        $.event.add(window, "scroll", function () {
+          var p = $(window).scrollTop();
+          $(elm).css('margin-left', '0px');
+          $(elm).css('position', ((p) > startPos) ? 'fixed' : 'static');
+          $(elm).css('top', ((p) > startPos) ? '65px' : '')
+        })
+      })
+      </script>
+    
+  </aside>
+  
 </div>
 
 					</div>

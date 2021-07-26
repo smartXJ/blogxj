@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>node-tool（window）</title>
+      <link href="2021/07/26/node-tool/"/>
+      <url>2021/07/26/node-tool/</url>
+      
+        <content type="html"><![CDATA[<p>目录</p><ul><li>nvm node版本管理</li><li>nrm node镜像源管理</li></ul><h2 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h2><p>node版本管理 开始前需卸载node</p><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>  <a href="https://github.com/coreybutler/nvm-windows/releases">nvm最新下载地址</a><br>  选择 nvm-setup.zip 下载<br>  <img src="https://img.redocn.com/shejigao/20121017/20121015_89c77712c62c15e2812eIEbBHsiMc1Mu.jpg.285.jpg" alt="1"><br>  下载成功后双击安装，自主选择选择nvm安装路径、node安装路径，开始安装。<br>  打开CMD，输入命令 nvm ，安装成功则如下显示。可以看到里面列出了各种命令<br>  <img src="https://img.redocn.com/shejigao/20121017/20121015_89c77712c62c15e2812eIEbBHsiMc1Mu.jpg.285.jpg" alt="1"></p><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><p>   1、查看本地安装的所有版本；有可选参数available，显示所有可下载的版本。<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm list [available]</span><br></pre></td></tr></table></figure><br>  2、安装，命令中的版本号可自定义，具体参考命令1查询出来的列表<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install 11.13.0</span><br></pre></td></tr></table></figure><br>   3、使用特定版本<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm use 11.13.0</span><br></pre></td></tr></table></figure><br>    4、卸载<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm uninstall 11.13.0</span><br></pre></td></tr></table></figure></p><h2 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h2><p>  nrm(npm registry manager ) node镜像源管理工具</p><h3 id="下载-1"><a href="#下载-1" class="headerlink" title="下载"></a>下载</h3><p>  全局安装 nrm<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -g i nrm</span><br></pre></td></tr></table></figure></p><h3 id="命令-1"><a href="#命令-1" class="headerlink" title="命令"></a>命令</h3><p>  1.查看可选源<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm ls</span><br></pre></td></tr></table></figure><br>  2.切换源<br>  切换到taobao源<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm use tabao</span><br></pre></td></tr></table></figure><br>  3.增加源<br>  你可以增加定制的源，特别适用于添加企业内部的私有源，执行命令 nrm add <registry> <url>，其中reigstry为源名，url为源的路径。<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm add registry http:&#x2F;&#x2F;registry.npm.frp.trmap.cn&#x2F;</span><br></pre></td></tr></table></figure><br>  4.删除源<br>  执行命令nrm del <registry>删除对应的源<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm del registry http:&#x2F;&#x2F;registry.npm.frp.trmap.cn&#x2F;</span><br></pre></td></tr></table></figure><br>  4.测试速度<br>  通过 nrm test 测试相应源的响应时间<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nrm test npm</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CubeJs</title>
       <link href="2021/05/21/CubeJs/"/>
       <url>2021/05/21/CubeJs/</url>
